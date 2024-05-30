@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>_1st_Web_App</RootNamespace>
+    <RootNamespace>Web_App</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +14,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Web_App.Access\Web_App.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

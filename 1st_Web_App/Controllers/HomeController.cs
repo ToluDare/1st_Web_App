@@ -1,8 +1,8 @@
-using _1st_Web_App.Models;
+using Web_App.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace _1st_Web_App.Controllers
+namespace Web_App.Controllers
 {
     public class HomeController : Controller
     {
