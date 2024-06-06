@@ -21,10 +21,16 @@
                     <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
                 <div class="mb-3 row p-1">
+                    <label asp-for="StockQuantity" class="p-1"> Stock Quantity </label>
+                    <input asp-for="StockQuantity" class="form-control" />
+                    
+                </div>
+                <div class="mb-3 row p-1">
                     <label asp-for="DisplayOrder" class="p-1"> Display Order</label>
                     <input asp-for="DisplayOrder" class="form-control" />
                     <span asp-validation-for="DisplayOrder" class="text-danger"></span>
                 </div>
+            
                 <div class="row">
                     <div class="col-6 col-md-3 ">
                         <button type="submit" class="btn btn-primary form-control" style="width:100%">Create</button>

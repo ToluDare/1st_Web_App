@@ -11,7 +11,8 @@ namespace Web_App.Data
         }
 
         public DbSet<Category> Categories { get; set; }
-
+        public DbSet<Cart> Carts { get; set; }
+        /*
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
@@ -20,6 +21,7 @@ namespace Web_App.Data
                     Id = 1,
                     Name = "Action",
                     DisplayOrder = 1
+
                 },
                 new Category
                 {
@@ -35,6 +37,6 @@ namespace Web_App.Data
                 }
 
                 );
-        }
+        }*/
     }
 }

@@ -10,7 +10,7 @@ using Web_App.DataAccess.Repository.IRepository;
 
 namespace Web_App.DataAccess.Repository
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class  
     {
         private readonly ApplicationDbContext _db;
         internal DbSet<T> dbSet;

@@ -1,0 +1,32 @@
+﻿@model List<Cart>
+@{
+}
+
+
+
+<h1> Cart List </h1>
+
+<table class="table" table-bordered table-striped>
+    <thead>
+        <tr>
+            <th>Category Name</th>
+            <th>Stock Quantity</th>
+            <th>Date Added</th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.OrderByDescending(u => u.DateCreated))
+        {
+            <tr>
+                <td>@obj.Name</td>
+                <td>@obj.StockQuantity</td>
+                <td>@obj.DateCreated.ToString("U")</td>
+                
+            </tr>
+        }
+
+    </tbody>
+</table>
+</div>

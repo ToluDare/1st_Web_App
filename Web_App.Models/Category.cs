@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Web_App.Models
 {
     public class Category
-    { //properites = column
+    { 
 
         [Key] 
         public int Id { get; set; }
@@ -13,6 +13,9 @@ namespace Web_App.Models
         [MaxLength(30)]
         [DisplayName("Category Name")]
         public string Name { get; set; }
+
+        [DisplayName("Stock Quantity")]
+        public int? StockQuantity { get; set; }
 
         [DisplayName("Display Order")]
         [Range(1,100, ErrorMessage="Display Order must be between 1-100")]
